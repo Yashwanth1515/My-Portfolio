@@ -115,3 +115,31 @@
         margin-bottom: 0.2rem;
     }
 }
+@media screen and (max-width:580px) {
+    .servicebars{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0rem 2rem;
+    }
+    .servicetext h2{
+    font-size: 1rem;
+    margin-bottom: 0.2rem;
+    font-family: serif;
+}
+.servicebar ul{
+    font-size: 0.6rem;
+    list-style: none;
+}
+.servicedesc{
+    font-size: 1.5rem;
+    margin-top: 1.8rem;
+    padding: 0px 10px ;
+}
+.serviceheadtitle{
+    font-size: 2.9rem;
+    margin-top: 0rem;
+    font-family: serif;
+    cursor: pointer;
+}
+}

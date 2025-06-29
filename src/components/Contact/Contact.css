@@ -71,16 +71,16 @@
 }
 @media screen and (max-width: 580px) {
   .icons {
-    flex-direction: column;         /* Stack children vertically */
+    flex-direction: column;         
     justify-content: center;
     align-items: center;
-    gap: 2rem;                      /* Optional spacing between items */
-    padding: 2rem 1rem;             /* Adjust padding for smaller screens */
+    gap: 2rem;                      
+    padding: 2rem 1rem;             
     text-align: center;
   }
 
   .items {
-    flex-direction: column;         /* Make inner items vertical too */
+    flex-direction: column;        
     align-items: center;
     gap: 1.5rem;
   }
@@ -90,7 +90,7 @@
   }
 
   .icon ul {
-    justify-content: center;        /* Center social icons */
+    justify-content: center;        
   }
 
   .item1 ul, .item2 ul, .item3 ul {
