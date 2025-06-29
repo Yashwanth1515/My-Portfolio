@@ -9,9 +9,6 @@ body{
     overflow-y: scroll;
     color: #fff;
     font-family: sans-serif;
-    scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
-    scroll-snap-align: center;
-    scrollbar-width: thin;
-    scrollbar-color: rebeccapurple green;
+    height: 100vh;
 }
+

@@ -1,0 +1,197 @@
+.slide{
+  height: 100vh;
+  width: 200px;
+  position: fixed;
+  background-color: rgb(49, 58, 64);
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  transition: transform 0.3s ease-in-out; /* Apply transition to transform */
+  transform: translateX(-180px); /* Hide the slide off-screen */
+  display: none;
+  padding: 60px;
+}
+h1{
+    color: yellow;
+    font-family: serif;
+    font-weight: 800;
+    text-align: right;
+    padding: 10px 0;
+    padding-right: 30px;
+    pointer-events: none;
+}
+.slide ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.slide ul li {
+  padding: 15px 20px;
+  border-bottom: 1px solid #ccc;
+}
+.slide ul li a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+#checkbox:checked ~ .slide {
+  transform: translateX(0);
+}
+
+#checkbox:checked ~ .slide {
+  transform: translateX(0);
+}
+
+#navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgba(30,30,30);
+    margin-top: 1px;
+    font-size: 1.3rem;
+    border-radius: 250px;
+    height: 4rem;
+    width: 100vw;
+    position:fixed;
+}
+.nav-right ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    padding: 20px 0px;
+}
+
+.nav-right ul li a{
+    color: rgb(97, 91, 91);
+    transition: 0.8s ease;
+}
+.nav-right li :hover{
+    color: rgb(255, 255, 3);
+    text-decoration: underline;
+    transform: scale(1.1);
+}
+.nav-right li a:active{
+    color: yellow;
+}
+.nav-left{
+    color: yellow;
+    font-weight: 800;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.nav-left:hover{
+    transform: scale(1.1);
+}
+.probtn {
+    padding: 0.5rem 1rem;
+    background-color: yellow;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 400;
+    border: 1px solid black;
+    font-family: sans-serif;
+}
+.probtn:hover{
+    box-shadow: 0 0 5px yellow,
+    0 0 10px yellow, 0 0 15px yellow;
+}
+#checkbox {
+  display: none;
+}
+@media screen and (max-width:580px) {
+    #navbar{
+        display: none;
+    }
+.slide {
+  transform: translateX(-100%); /* Hidden off-screen by default */
+  transition: transform 0.3s ease-in-out;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 200px;
+  background-color: rgb(49, 58, 64);
+  z-index: 1000;
+  padding-top: 60px;
+}
+
+    
+    #checkbox {
+        display: none;
+      }
+      
+      .toggle {
+        position: relative;
+        width: 40px;
+        cursor: pointer;
+        margin: auto;
+        display: block;
+        height: calc(4px * 3 + 11px * 2);
+      }
+      #menuToggle{
+        position: relative;
+        left: 0px;
+        width: 50px;
+      }
+      
+      .bar {
+        position: absolute;
+        left: 0;
+        right: 0;
+        height: 4px;
+        border-radius: calc(4px / 2);
+        background: #7b52b9;
+        color: inherit;
+        opacity: 1;
+        transition: none 0.35s cubic-bezier(.5,-0.35,.35,1.5) 0s;
+      }
+      
+      /***** Tornado Animation *****/
+      
+      .bar--top {
+        bottom: calc(50% + 11px + 4px/ 2);
+        transition-property: bottom,transform;
+        transition-delay: calc(0s + 0.35s) * .6;
+      }
+      
+      .bar--middle {
+        top: calc(50% - 4px/ 2);
+        transition-property: opacity,transform;
+        transition-delay: calc(0s + 0.35s * .3);
+      }
+      
+      .bar--bottom {
+        top: calc(50% + 11px + 4px/ 2);
+        transition-property: top,transform;
+        transition-delay: 0s;
+      }
+      
+      #checkbox:checked + .toggle .bar--top {
+        transform: rotate(-135deg);
+        transition-delay: 0s;
+        bottom: calc(50% - 4px/ 2);
+      }
+      
+      #checkbox:checked + .toggle .bar--middle {
+        opacity: 0;
+        transform: rotate(-135deg);
+        transition-delay: calc(0s + 0.35s * .3);
+      }
+      
+      #checkbox:checked + .toggle .bar--bottom {
+        top: calc(50% - 4px/ 2);
+        transform: rotate(-225deg);
+        transition-delay: calc(0s + 0.35s * .6);
+      }
+      input:checked + .toggle + .slide {
+        display: block; /* Slide in when checked */
+        transform: translateX(0);
+    }
+      #checkbox:checked ~ .slide {
+    transform: translateX(0);
+  }
+}
+/* From Uiverse.io by vk-uiux */ 
+

@@ -1,0 +1,109 @@
+.hr{
+    height: 0rem;
+    background-color: transparent;
+}
+#icons{
+    margin-top: 5rem;
+}
+.icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 4rem;
+}
+.logoname {
+    font-size: 2rem;
+    color: #000000;
+    font-weight: 700;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.icon ul{
+    display: flex;
+    gap: 10px;
+    list-style: none;
+}
+.social{
+    color: #000000;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: underline;
+}
+.item1{
+    padding: 0 2rem;
+}
+ ul {
+    list-style: none;
+}
+.item1 ul li a{
+    color: rgb(29, 28, 28);
+    gap: 2rem;
+    display: block;
+    transition: all 0.3s ease;
+}
+.item1 p{
+    text-decoration: underline rgb(226, 91, 114);
+}
+.imgs{
+    height: 2.5rem;
+    width: 2.5rem;
+    filter: invert(2);
+}
+
+.imgs:hover {
+  transform: scale(1.2);
+}
+
+.items{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.item2 p{
+    text-decoration: underline rgb(226, 91, 114);
+}
+.item2 ul li{
+    list-style: none;
+}
+.item3 p{
+    text-decoration: underline rgb(226, 91, 114);
+}
+.item3 ul li {
+    list-style: none;
+}
+@media screen and (max-width: 580px) {
+  .icons {
+    flex-direction: column;         /* Stack children vertically */
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;                      /* Optional spacing between items */
+    padding: 2rem 1rem;             /* Adjust padding for smaller screens */
+    text-align: center;
+  }
+
+  .items {
+    flex-direction: column;         /* Make inner items vertical too */
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .item1, .item2, .item3 {
+    padding: 0;
+  }
+
+  .icon ul {
+    justify-content: center;        /* Center social icons */
+  }
+
+  .item1 ul, .item2 ul, .item3 ul {
+    padding: 0;
+  }
+  .logoname {
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+}
+.item1 ul li a,
+.item2 ul li,
+.item3 ul li {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+}
