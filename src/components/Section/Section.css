@@ -152,9 +152,9 @@
     .line{
         font-size: 0.6rem;
     }
-    @media  screen and (max-width:400px){
+    @media  screen and (max-width:580px){
         .intro{
-            width: 80vw;
+            width: 60vw;
             display: flex;
             flex-wrap: wrap-reverse;
             justify-content: space-around;
@@ -170,8 +170,6 @@
     filter: invert(1);
 }
 
-@media screen and (max-width:580px) {
-}
 
 
 
