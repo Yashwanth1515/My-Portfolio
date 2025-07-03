@@ -64,16 +64,32 @@ h1{
 
 .nav-right ul li a{
     color: rgb(97, 91, 91);
-    transition: 0.8s ease;
+    position: relative;
 }
-.nav-right li :hover{
+/* .nav-right li :hover{
     color: rgb(255, 255, 3);
     text-decoration: underline;
     transform: scale(1.1);
-}
-.nav-right li a:active{
+} */
+/* .nav-right li a:active{
     color: yellow;
-}
+} */
+ .nav-right ul li a:hover{
+  color: #fff;
+ }
+ .nav-right a::before{
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background-color: yellow;
+  transition: all .5s;
+ }
+  .nav-right a:hover:before{
+    width: 100%;
+  }
 .nav-left{
     color: yellow;
     font-weight: 800;
@@ -106,7 +122,8 @@ h1{
     }
 .slide {
   transform: translateX(-100%); /* Hidden off-screen by default */
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.9s ease-in-out;
+  transition-delay: 1s;
   position: fixed;
   top: 0;
   left: 0;
@@ -186,12 +203,12 @@ h1{
         transition-delay: calc(0s + 0.35s * .6);
       }
       input:checked + .toggle + .slide {
-        display: block; /* Slide in when checked */
+        display: block; 
         transform: translateX(0);
-    }
+      }
       #checkbox:checked ~ .slide {
-    transform: translateX(0);
+        transform: translateX(0);
+        width: 80vw;
   }
 }
-/* From Uiverse.io by vk-uiux */ 
 

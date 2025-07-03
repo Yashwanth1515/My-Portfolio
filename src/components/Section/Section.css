@@ -35,6 +35,7 @@
     border-radius: 200px;
     object-fit: cover;
     border: 5px solid yellow;
+    transition: all 0.3s ease-in-out;
 }
 .img:hover{
     box-shadow: 0 0 10px yellow,
@@ -154,13 +155,16 @@
     }
     @media  screen and (max-width:580px){
         .intro{
-            width: 60vw;
+            width: 50vw;
             display: flex;
             flex-wrap: wrap-reverse;
             justify-content: space-around;
             align-items: center;
             overflow-x: hidden;
             margin: 0 auto;
+        }
+        .intro-name{
+            margin-top: 0rem;
         }
     }
 }
